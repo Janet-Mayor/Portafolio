@@ -29,7 +29,7 @@ body{
 }
 
 .presentacion{
-    padding: 7% 15%;
+    padding: 6% 15%;
     /*se quito el height: 100vh;*/
     display: flex;
     align-items: center;
