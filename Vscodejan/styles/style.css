@@ -1,6 +1,17 @@
 @import url("https://fronts.gooleapis.com/css2?family=krona+One&display=swap");
 @import url("https://fronts.gooleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,1000..900;1,1000..900&display=swap")
 
+:root{
+    --color-primario: #704264;
+    --color-secundario: #BB8493;
+    --color-terciario: #DBAFA0;
+    --color-hover: #272727;
+
+    --fuente-montserrat: "Montserrat", sans serif;
+    --fuente-krona: "krona One", sans serif;
+
+}
+
 * {
     padding:0;
     margin:0;
@@ -8,8 +19,8 @@
 
 body{
     box-sizing: border-box;
-    background-color:  black;
-    color:blueviolet
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
 }
 
 .header{
@@ -21,11 +32,12 @@ body{
     gap: 80px;
 }
 
-.header__menu__limk{
-    font-family: "Montserrat",sans-serif;
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--color-terciario);
+    text-decoration: none;
 }
 
 .presentacion{
@@ -46,14 +58,14 @@ body{
 
 .presentacion__contenido__titulo{
     font-size: 36px;
-    font-family: "krona One", sans-serif;
+    font-family: var(--fuente-krona);
 }
 
 .titulo-destaque{
-    color:#22D4FD;
+    color: var(--color-terciario);
 }
 .presentacion__contenido__texto{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
 }
 
@@ -66,7 +78,7 @@ body{
 }
 
 .presentacion__enlaces__subtitulo{
-    font-family: "krona One", sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 24px;
     font-weight: 400;
 }
@@ -80,27 +92,27 @@ body{
     padding: 21.5px 0;
     border-radius: 16px;
     text-decoration: none;
-    color: #f6f6f6;
-    font-family: "Montserrat", sans-serif;
-    border: 2px solido #22D4FD;
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    border: 2px solid var(--color-terciario);
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
 .presentacion__enlaces__link:hover{
-    background-color: #272727;
+    background-color: var(--color-hover);
 }
 
 .footer{
-    background-color: #24D4FD;
+    background-color: var(--color-terciario);
     padding: 24px;
-    color:#000000;
+    color:var(--color-primario);
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 400px;
 }
-strong{
+/*strong{
     color: aqua;
-}
+}*/
